@@ -17,7 +17,9 @@ python3 -m venv venv
 
 source venv/bin/activate
 
-pip install jupyterlite-core jupyterlite-pyodide-kernel
+pip install jupyterlite-core \
+    jupyterlite-pyodide-kernel \
+     jupyterlite-xeus-python
 
 jupyter lite build \
     --output-dir dist \
